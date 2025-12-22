@@ -1,0 +1,33 @@
+.search-wrapper {
+  flex: 1;
+  margin: 0 30px;
+}
+
+.search-box {
+  display: flex;
+  background: #f9f9f9;
+  border-radius: 30px;
+  overflow: hidden;
+  max-width: 500px;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  padding: 12px 18px;
+  font-size: 14px;
+  outline: none;
+  background: transparent;
+}
+
+.search-box button {
+  border: none;
+  background: #8b1e3f;
+  color: white;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #6e1732;
+}

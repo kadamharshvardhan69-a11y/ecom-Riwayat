@@ -1,0 +1,135 @@
+/* Page background */
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #fafafa, #ffffff);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Card */
+.signup-card {
+  width: 900px;
+  max-width: 95%;
+  background: #fff;
+  display: flex;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+  margin-top: 20px;
+}
+
+/* LEFT BRAND SECTION */
+.signup-left {
+  flex: 1;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTl-d0E0em6JmYfU7Nqu4labu9ld5h-cWoRgxdp-ueiaeIsf_vaD-dnoEiSJt7QxuJ5tn179oGfIoPOvlh4DxDTOEjhpaGvTtoqkGX0_-hN")
+      center / cover no-repeat;
+  color: #f5e6c8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.signup-left h1 {
+  font-size: 42px;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.signup-left p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* RIGHT FORM SECTION */
+.signup-right {
+  flex: 1;
+  padding: 50px 45px;
+}
+
+.signup-right h2 {
+  color: #2b1b14;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+/* Form */
+.signup-right form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs */
+.signup-right input {
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.signup-right input:focus {
+  outline: none;
+  border-color: #c9a14a;
+  box-shadow: 0 0 0 2px rgba(201, 161, 74, 0.2);
+}
+
+/* Button */
+.signup-right button {
+  margin-top: 10px;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #c9a14a, #e6c28b);
+  color: #2b1b14;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signup-right button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Login text */
+.login-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.login-text span {
+  color: #c9a14a;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-text span:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .signup-card {
+    flex-direction: column;
+  }
+
+  .signup-left {
+    height: 200px;
+  }
+
+  .signup-right {
+    padding: 30px;
+  }
+}

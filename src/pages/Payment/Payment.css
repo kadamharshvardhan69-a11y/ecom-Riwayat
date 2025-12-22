@@ -1,0 +1,20 @@
+.payment-container {
+  max-width: 500px;
+  margin: 60px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.payment-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #8b1e3f;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}

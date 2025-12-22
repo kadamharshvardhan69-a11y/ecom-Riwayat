@@ -1,0 +1,80 @@
+.checkout-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Steps */
+.checkout-steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.checkout-steps div {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 3px solid #ddd;
+  color: #999;
+  font-weight: 600;
+}
+
+.checkout-steps .active {
+  border-color: #8b1e3f;
+  color: #8b1e3f;
+}
+
+/* Card */
+.checkout-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.checkout-card h3 {
+  margin-bottom: 20px;
+  color: #8b1e3f;
+}
+
+.checkout-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* Buttons */
+.checkout-card button {
+  padding: 12px 20px;
+  background: #8b1e3f;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.checkout-card button:hover {
+  background: #6e1732;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Review */
+.review-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.place-order {
+  background: linear-gradient(135deg, #c9a14a, #e6c28b);
+  color: #2b1b14;
+  font-weight: bold;
+}

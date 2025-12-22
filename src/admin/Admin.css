@@ -1,0 +1,50 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.admin-sidebar {
+  width: 240px;
+  background: #2b1b14;
+  color: #fff;
+  padding: 20px;
+}
+
+.admin-sidebar h2 {
+  color: #e6c28b;
+  margin-bottom: 30px;
+}
+
+.admin-sidebar a {
+  display: block;
+  color: white;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.admin-main {
+  flex: 1;
+  padding: 40px;
+  background: #f9f9f9;
+}
+
+.admin-product {
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.admin-product img {
+  width: 100px;
+  border-radius: 8px;
+}
+
+.admin-form input,
+.admin-form textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+}
