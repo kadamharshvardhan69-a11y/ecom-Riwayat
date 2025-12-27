@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 
 import Navbar from "./compontes/Navbar/Navbar";
@@ -15,17 +15,19 @@ import Payment from "./pages/Payment/Payment";
 
 import AdminRoute from "./routes/AdminRoute";
 import AdminDashboard from "./admin/AdminDashboard";
+import AdminProducts from "./admin/AdminProducts";
+import AddProduct from "./admin/AddProduct";
 
 const App = () => {
-  const [isAdmin, setIsAdmin] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(true);
   const navigate = useNavigate();
 
   // 🔐 Redirect admin after login
-  useEffect(() => {
-    if (isAdmin) {
-      navigate("/admin");
-    }
-  }, [isAdmin, navigate]);
+  // useEffect(() => {
+  //   if (isAdmin) {
+  //     navigate("/admin");
+  //   }
+  // }, [isAdmin, navigate]);
 
   return (
     <>
@@ -48,9 +50,21 @@ const App = () => {
         <Route
           path="/admin"
           element={
-            <AdminRoute>
-              <AdminDashboard />
-            </AdminRoute>
+              <AdminDashboard/>
+          }
+        />
+         <Route
+          path="/admin/products"
+          element={
+
+              <AdminProducts/>
+            
+          }
+        />
+        <Route
+          path="/admin/add-product"
+          element={
+              <AddProduct/>
           }
         />
       </Routes>
